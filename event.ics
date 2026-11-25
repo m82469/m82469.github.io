@@ -10,7 +10,7 @@ DTSTART:20270809T120000Z
 DTEND:20270809T180000Z
 SUMMARY:Свадьба Константина и Любови
 DESCRIPTION:Сбор гостей в 15:30. Начало церемонии в 16:00. Будем счастливы разделить этот день с вами!
-LOCATION:Самара\, станция метро «Победа»
+LOCATION:LOTTE Hotel Samara\, улица Самарская\, 110\, Самара
 STATUS:CONFIRMED
 BEGIN:VALARM
 TRIGGER:-P1D

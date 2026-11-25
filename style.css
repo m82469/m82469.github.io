@@ -127,8 +127,16 @@ svg { display: block; }
 .venue__address p { margin: 0; color: var(--muted); font-size: .82rem; }
 .venue__address strong { color: var(--ink); font-weight: 500; }
 .map { position: relative; overflow: hidden; height: clamp(380px, 55vw, 570px); background: #d7d8ce; }
-.map iframe { width: 100%; height: 100%; border: 0; filter: saturate(.65) sepia(.08); }
-.map__button { position: absolute; right: 18px; bottom: 18px; }
+.map__image { width: 100%; height: 100%; object-fit: cover; filter: saturate(.65) sepia(.08); }
+.map__pin { position: absolute; z-index: 2; top: 50%; left: 50%; width: 44px; height: 55px; transform: translate(-50%, -100%); filter: drop-shadow(0 5px 6px rgba(30, 35, 29, .3)); }
+.map__pin path { fill: var(--ink); stroke: var(--white); stroke-width: 1.5; }
+.map__pin circle { fill: var(--white); }
+.map__place { position: absolute; z-index: 2; top: 20px; left: 20px; padding: 13px 18px; background: rgba(255, 253, 248, .95); box-shadow: 0 8px 25px rgba(30, 35, 29, .12); }
+.map__place strong, .map__place span { display: block; }
+.map__place strong { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; line-height: 1.2; }
+.map__place span { margin-top: 4px; color: var(--muted); font-size: .65rem; }
+.map__attribution { position: absolute; z-index: 2; bottom: 5px; left: 8px; padding: 1px 5px; color: #4e514a; background: rgba(255, 255, 255, .85); font-size: .5rem; line-height: 1.4; text-decoration: none; }
+.map__button { position: absolute; right: 18px; bottom: 32px; }
 
 .dresscode { text-align: center; }
 .dresscode p:not(.eyebrow) { max-width: 630px; margin: 0 auto; color: var(--muted); font-size: .88rem; }
@@ -200,7 +208,7 @@ svg { display: block; }
   .site-header { color: var(--ink); }
   .hero { min-height: 800px; align-items: center; background: var(--paper); }
   .hero__media { top: 8%; right: 6%; bottom: 7%; left: auto; width: 43%; overflow: hidden; border-radius: 48% 48% 3px 3px / 30% 30% 3px 3px; }
-  .hero__media img { object-position: center; }
+  .hero__media img { object-position: center 18%; }
   .hero__veil { background: linear-gradient(180deg, transparent 65%, rgba(22, 28, 23, .15)); }
   .hero__content { width: 58%; padding: 130px 3vw 80px max(6vw, calc((100vw - 1400px) / 2)); color: var(--ink); }
   .hero h1 { margin-bottom: 30px; font-size: clamp(5rem, 8.4vw, 8.6rem); }
