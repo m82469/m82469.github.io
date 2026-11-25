@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Konstantin and Lyubov//Wedding Invitation//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:wedding-20270809-konstantin-lyubov@invitation.local
+DTSTAMP:20261125T120000Z
+DTSTART:20270809T120000Z
+DTEND:20270809T180000Z
+SUMMARY:Свадьба Константина и Любови
+DESCRIPTION:Сбор гостей в 15:30. Начало церемонии в 16:00. Будем счастливы разделить этот день с вами!
+LOCATION:Самара\, станция метро «Победа»
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Завтра свадьба Константина и Любови
+END:VALARM
+END:VEVENT
+END:VCALENDAR

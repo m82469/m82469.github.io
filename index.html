@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Свадебное приглашение Константина и Любови — 9 августа 2027 года, Самара.">
+  <title>Константин и Любовь — 9 августа 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+    <div class="intro__ornament" aria-hidden="true">
+      <svg viewBox="0 0 180 110" fill="none"><path d="M90 103C88 69 66 43 30 27M89 82C104 57 126 43 153 36M69 61C49 61 35 52 26 36C45 34 61 43 69 61ZM104 62C113 43 130 34 151 35C145 53 128 63 104 62ZM84 89C67 83 57 70 55 53C73 58 84 70 84 89Z" stroke="currentColor" stroke-width="1.2"/><path d="M91 104C93 69 107 38 130 13M104 59C99 44 103 28 115 16C124 31 120 47 104 59Z" stroke="currentColor" stroke-width="1.2"/></svg>
+    </div>
+    <p class="eyebrow">Приглашение на свадьбу</p>
+    <h2 id="intro-title">Константин <span>и</span> Любовь</h2>
+    <p class="intro__date">09 · 08 · 2027</p>
+    <p class="intro__text">Для самых дорогих и близких</p>
+    <button class="button button--dark intro__open" id="open-with-music" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13M9 9l11-2M6.5 21C4.6 21 3 20 3 18.5S4.6 16 6.5 16 10 17 10 18.5 8.4 21 6.5 21Zm11-2c-1.9 0-3.5-1-3.5-2.5s1.6-2.5 3.5-2.5 3.5 1 3.5 2.5-1.6 2.5-3.5 2.5Z"/></svg>
+      Открыть со звуком
+    </button>
+    <button class="intro__without" id="open-without-music" type="button">Открыть без звука</button>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <a class="monogram" href="#top" aria-label="В начало страницы">К <span>&</span> Л</a>
+    <p>09 августа 2027 <span>•</span> Самара</p>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/images/couple-hero.jpg" alt="" fetchpriority="high">
+        <div class="hero__veil"></div>
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow">Мы женимся</p>
+        <h1 id="hero-title">Константин<br><em>и</em> Любовь</h1>
+        <p class="hero__lead">В нашей истории начинается новая глава.<br>Будем счастливы открыть её вместе с вами.</p>
+        <div class="hero__date" aria-label="9 августа 2027 года">
+          <span>август</span>
+          <strong>09</strong>
+          <span>2027</span>
+        </div>
+        <a class="hero__scroll" href="#invitation">
+          <span>Листайте вниз</span>
+          <svg viewBox="0 0 24 36" aria-hidden="true"><rect x="3" y="1" width="18" height="32" rx="9"/><path d="M12 8v7m-3-3 3 3 3-3"/></svg>
+        </a>
+      </div>
+      <p class="hero__side" aria-hidden="true">День, когда мы скажем друг другу «да»</p>
+    </section>
+
+    <section class="invitation section" id="invitation">
+      <div class="section__inner section__inner--narrow reveal">
+        <svg class="botanical" viewBox="0 0 120 100" fill="none" aria-hidden="true"><path d="M61 94C58 65 43 37 16 14M58 69C72 52 88 42 108 40M45 46C31 46 20 38 14 25C28 23 40 31 45 46ZM69 58C78 43 91 37 107 39C100 53 87 60 69 58ZM57 79C43 73 35 62 34 48C48 53 57 64 57 79Z" stroke="currentColor" stroke-width="1.1"/></svg>
+        <p class="eyebrow">С любовью и радостью</p>
+        <h2>Два сердца —<br><em>одна история</em></h2>
+        <p class="invitation__text">Дорогие наши родные и друзья!</p>
+        <p>Мы нашли друг друга среди миллионов людей, и теперь хотим идти по жизни рука об руку. Приглашаем вас разделить с нами день, который навсегда останется в наших сердцах.</p>
+        <div class="signature">Константин <span>и</span> Любовь</div>
+      </div>
+    </section>
+
+    <section class="countdown section" aria-labelledby="countdown-title">
+      <div class="section__inner reveal">
+        <p class="eyebrow">До нашей свадьбы</p>
+        <h2 id="countdown-title">Осталось совсем немного</h2>
+        <div class="countdown__grid" id="countdown" role="timer" aria-label="Обратный отсчёт до 9 августа 2027 года">
+          <div class="countdown__item"><strong id="days">—</strong><span id="days-label">дней</span></div>
+          <div class="countdown__item"><strong id="hours">—</strong><span id="hours-label">часов</span></div>
+          <div class="countdown__item"><strong id="minutes">—</strong><span id="minutes-label">минут</span></div>
+          <div class="countdown__item"><strong id="seconds">—</strong><span id="seconds-label">секунд</span></div>
+        </div>
+        <a class="text-link" href="event.ics" download="Свадьба-Константина-и-Любови.ics">
+          Добавить дату в календарь
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3v3m14-3v3M3 9h18M5 5h14a2 2 0 0 1 2 2v13H3V7a2 2 0 0 1 2-2Zm7 7v6m-3-3h6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="moments section" aria-label="Наша история в фотографиях">
+      <div class="moments__grid section__inner">
+        <figure class="moments__main reveal">
+          <div class="photo-frame"><img src="assets/images/couple-walk.jpg" alt="Константин и Любовь идут рука об руку в солнечном саду" loading="lazy"></div>
+          <figcaption>Идти по жизни рука об руку</figcaption>
+        </figure>
+        <div class="moments__note reveal">
+          <span class="moments__number" aria-hidden="true">∞</span>
+          <blockquote>«И самый красивый пейзаж —<br>это тот, куда мы идём<br><em>вместе</em>»</blockquote>
+        </div>
+        <figure class="moments__detail reveal">
+          <img src="assets/images/couple-details.jpg" alt="Нежный портрет Константина и Любови" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="day section" id="day" aria-labelledby="day-title">
+      <div class="section__inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Понедельник, 9 августа</p>
+          <h2 id="day-title">Наш особенный день</h2>
+          <p>Будем рады, если вы разделите с нами<br>каждый момент этого праздника.</p>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <time datetime="2027-08-09T15:30:00+04:00">15:30</time>
+            <div><h3>Сбор гостей</h3><p>Встречаемся заранее, обнимаемся<br>и настраиваемся на красивый день.</p></div>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M13 25h22l-2-9H15l-2 9Zm3 0v9m16-9v9M11 37h26M18 16c0-4 2-7 6-7s6 3 6 7"/></svg>
+          </li>
+          <li class="timeline__item reveal">
+            <time datetime="2027-08-09T16:00:00+04:00">16:00</time>
+            <div><h3>Церемония</h3><p>Самые важные слова, кольца<br>и начало нашей семейной истории.</p></div>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="19" cy="26" r="10"/><circle cx="29" cy="26" r="10"/><path d="m24 9 3 4-3 4-3-4 3-4Z"/></svg>
+          </li>
+          <li class="timeline__item reveal">
+            <time datetime="2027-08-09T17:00:00+04:00">17:00</time>
+            <div><h3>Праздничный банкет</h3><p>Тёплые тосты, вкусный ужин,<br>танцы и много счастливых моментов.</p></div>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 8h24l-3 15a9 9 0 0 1-18 0L12 8Zm12 24v9m-7 0h14M16 14h16"/></svg>
+          </li>
+          <li class="timeline__item reveal">
+            <time datetime="2027-08-09T22:00:00+04:00">22:00</time>
+            <div><h3>Финал вечера</h3><p>Завершаем праздник красиво<br>и благодарим друг друга за этот день.</p></div>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M34 31a15 15 0 0 1-17-21 15 15 0 1 0 17 21Zm5-20v8m-4-4h8"/></svg>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="venue section" id="venue" aria-labelledby="venue-title">
+      <div class="section__inner">
+        <div class="venue__heading reveal">
+          <div>
+            <p class="eyebrow">Место встречи</p>
+            <h2 id="venue-title">Будем ждать вас<br><em>в самом сердце Самары</em></h2>
+          </div>
+          <div class="venue__address">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <p>Самара<br><strong>станция метро «Победа»</strong></p>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C%20%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F%20%D0%BC%D0%B5%D1%82%D1%80%D0%BE%20%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%B0&z=16" title="Карта: станция метро Победа в Самаре" loading="lazy" allowfullscreen></iframe>
+          <a class="button button--light map__button" href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C%20%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F%20%D0%BC%D0%B5%D1%82%D1%80%D0%BE%20%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%B0" target="_blank" rel="noopener noreferrer">
+            Построить маршрут
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dresscode section" aria-labelledby="dresscode-title">
+      <div class="section__inner section__inner--narrow reveal">
+        <p class="eyebrow">Дресс-код</p>
+        <h2 id="dresscode-title">Немного о деталях</h2>
+        <p>Мы выбрали нежную природную палитру для нашего праздника. Будем рады, если ваши наряды поддержат её настроение — в оттенках, которые нравятся именно вам.</p>
+        <div class="palette" role="list" aria-label="Цветовая палитра дресс-кода">
+          <div class="palette__color" role="listitem"><span style="--color:#e7e0d3"></span><small>Кремовый</small></div>
+          <div class="palette__color" role="listitem"><span style="--color:#b7ad98"></span><small>Песочный</small></div>
+          <div class="palette__color" role="listitem"><span style="--color:#929783"></span><small>Шалфей</small></div>
+          <div class="palette__color" role="listitem"><span style="--color:#626b56"></span><small>Оливковый</small></div>
+          <div class="palette__color" role="listitem"><span style="--color:#343b31"></span><small>Тёмный лес</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="finale section">
+      <div class="section__inner section__inner--narrow reveal">
+        <svg class="finale__rings" viewBox="0 0 100 70" fill="none" aria-hidden="true"><circle cx="39" cy="39" r="23"/><circle cx="61" cy="39" r="23"/><path d="m50 5 5 8-5 8-5-8 5-8Z"/></svg>
+        <p class="eyebrow">С нетерпением ждём встречи</p>
+        <h2>Этот день станет<br>особенным <em>благодаря вам</em></h2>
+        <p>Пожалуйста, берегите свои улыбки<br>и готовьтесь к красивому празднику.</p>
+        <div class="finale__names">Константин <span>&</span> Любовь</div>
+        <p class="finale__date">09 · 08 · 2027</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Сделано с любовью к нашей истории</p>
+    <a href="#top">Наверх <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <button class="music-toggle" id="music-toggle" type="button" aria-label="Включить музыку: МАЯК X — Украсть тебя" aria-pressed="false">
+    <span class="music-toggle__icon" aria-hidden="true">
+      <svg class="icon-play" viewBox="0 0 24 24"><path d="m9 6 9 6-9 6V6Z"/></svg>
+      <svg class="icon-pause" viewBox="0 0 24 24"><path d="M8 6v12M16 6v12"/></svg>
+    </span>
+    <span class="music-toggle__text"><small id="music-state">Включить музыку</small><strong>МАЯК X — Украсть тебя</strong></span>
+    <span class="music-toggle__waves" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+  <audio id="wedding-music" src="assets/audio/ukrasti-tebya.mp3" loop preload="auto"></audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript><style>.intro{display:none!important}.reveal{opacity:1!important;transform:none!important}.music-toggle{display:none!important}</style></noscript>
+</body>
+</html>
